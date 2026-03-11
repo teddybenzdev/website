@@ -26,10 +26,10 @@ export default function Navbar() {
     <div className="fixed top-6 left-0 right-0 z-50 flex justify-center px-4 pointer-events-none">
       <nav 
         ref={navRef}
-        className={`pointer-events-auto transition-all duration-500 flex items-center justify-between px-6 py-3 rounded-[2rem] w-full max-w-5xl ${
+        className={`pointer-events-auto transition-all duration-500 flex items-center justify-between px-6 py-3 rounded-[2rem] w-full max-w-7xl ${
           isScrolled 
-            ? 'bg-background/70 backdrop-blur-xl border border-primary/10 text-primary shadow-lg' 
-            : 'bg-transparent text-background border border-transparent'
+            ? 'bg-background/80 backdrop-blur-xl border border-primary/20 text-dark shadow-md' 
+            : 'bg-transparent text-dark border border-transparent'
         }`}
       >
         <div className="flex items-center gap-2">
@@ -42,20 +42,18 @@ export default function Navbar() {
         </div>
 
         <div className="hidden md:flex items-center gap-8 font-sans text-sm font-medium tracking-wide opacity-80">
-          <a href="#features" className="hover:opacity-100 transition-opacity">Framework</a>
-          <a href="#philosophy" className="hover:opacity-100 transition-opacity">Philosophy</a>
-          <a href="#protocol" className="hover:opacity-100 transition-opacity">Protocol</a>
+          {/* Links intentionally removed per user request */}
         </div>
 
         <a 
-          href="https://marketstack.ai" 
+          href="https://marketstack.ai/audit" 
           target="_blank" 
           rel="noreferrer"
           className="relative overflow-hidden group bg-accent text-background px-5 py-2.5 rounded-full flex items-center gap-2 font-sans font-semibold text-sm hover:scale-[1.03] transition-transform duration-300 ease-[cubic-bezier(0.25,0.46,0.45,0.94)]"
         >
-          <span className="absolute inset-0 w-full h-full -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-[cubic-bezier(0.25,0.46,0.45,0.94)] bg-primary"></span>
+          <span className="absolute inset-x-0 bottom-0 h-full w-full -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-[cubic-bezier(0.25,0.46,0.45,0.94)] bg-primary object-cover rounded-full pointer-events-none"></span>
           <span className="relative z-10 flex items-center gap-2">
-            Get AI Audit <ArrowUpRight size={16} />
+            AI Audit <ArrowUpRight size={16} className="group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-transform" />
           </span>
         </a>
       </nav>
