@@ -47,7 +47,7 @@ export default function Hero() {
           
           <div className="flex flex-col items-center lg:items-start gap-2 w-full">
             <p className="hero-element font-data text-accent tracking-widest uppercase text-xs md:text-sm font-semibold mb-2">
-              Developer / Consultant
+              AI &times; Real Estate &mdash; Builder / Land Investor
             </p>
             
             <h1 className="flex flex-col leading-[1.1] md:leading-[1.05] text-dark">
