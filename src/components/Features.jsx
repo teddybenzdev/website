@@ -7,7 +7,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 // Value Prop: Software Development
 const TelemetryTypewriter = () => {
-  const fullText = "> Initializing software stack...\n> Deploying custom architectures.\n> Refactoring legacy systems.\n> Status: OPTIMAL.";
+  const fullText = "> pulling parcel data...\n> running comps on 14 lots.\n> flag: no legal road access.\n> report ready.";
   const [text, setText] = useState("");
 
   useEffect(() => {
@@ -228,12 +228,6 @@ export default function Features() {
   return (
     <section id="features" ref={container} className="pt-4 pb-16 px-6 max-w-7xl mx-auto relative z-20">
 
-      <div className="mb-12 max-w-full overflow-hidden">
-        <h2 className="font-sans font-bold text-[6.2vw] sm:text-[5vw] md:text-5xl lg:text-6xl mb-2 tracking-tighter whitespace-nowrap overflow-visible">
-          Building systems <span className="font-drama italic font-normal text-dark/70">(and houses)</span>
-        </h2>
-      </div>
-
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
 
         {/* Expanded Real Estate Section */}
@@ -241,7 +235,7 @@ export default function Features() {
           <div className="p-8 md:p-12 md:w-1/2 flex flex-col justify-center">
             <h3 className="font-sans font-bold text-3xl md:text-4xl mb-4">Land Development</h3>
             <p className="font-sans text-base opacity-80 mb-8 max-w-md leading-relaxed">
-              Physical transformation engineered for scale and durability. I focus on deploying capital into high-yield physical assets.
+              I buy and develop land in the Southeast &mdash; and I'm actively acquiring. Here's exactly what I'm looking for.
             </p>
 
             <div className="flex flex-col gap-4">
@@ -278,7 +272,7 @@ export default function Features() {
         {/* Existing Software Arch Card */}
         <div className="feature-card bg-background border border-primary/10 rounded-[2.5rem] p-8 shadow-xl flex flex-col">
           <h3 className="font-sans font-bold text-2xl mb-2">Software Dev</h3>
-          <p className="font-sans text-sm opacity-70 mb-8 max-w-[200px]">Robust digital architectures and clean systems.</p>
+          <p className="font-sans text-sm opacity-70 mb-8 max-w-xs">Production systems, not demos. I run my own land business on this stack.</p>
           <div className="mt-auto h-full min-h-[220px]">
             <TelemetryTypewriter />
           </div>
@@ -287,7 +281,7 @@ export default function Features() {
         {/* Existing Agentic Config Card */}
         <div className="feature-card bg-background border border-primary/10 rounded-[2.5rem] p-8 shadow-xl flex flex-col relative overflow-hidden">
           <h3 className="font-sans font-bold text-2xl mb-2">Agentic Workflows</h3>
-          <p className="font-sans text-sm opacity-70 mb-8 max-w-[200px]">Automating complexity through intelligent protocols.</p>
+          <p className="font-sans text-sm opacity-70 mb-8 max-w-xs">Agents that do real work &mdash; like the one that runs due diligence on parcels before I buy.</p>
           <div className="mt-auto h-full min-h-[200px]">
             <AgenticWorkflowVisual />
           </div>

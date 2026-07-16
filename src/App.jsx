@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Socials from './components/Socials';
 import Features from './components/Features';
+import Newsletter from './components/Newsletter';
 import Footer from './components/Footer';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -21,6 +22,7 @@ function App() {
       <Navbar />
       <Hero />
       <Features />
+      <Newsletter />
       <Footer />
     </div>
   );
