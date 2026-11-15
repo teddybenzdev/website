@@ -1,0 +1,24 @@
+name: Agent configuration
+on:
+  pull_request:
+    paths: ['.rulesync/**', 'rulesync.jsonc', 'package.json', 'pnpm-lock.yaml', '.github/workflows/agent-configuration.yml']
+  push:
+    branches: [main]
+    paths: ['.rulesync/**', 'rulesync.jsonc', 'package.json', 'pnpm-lock.yaml', '.github/workflows/agent-configuration.yml']
+jobs:
+  generate:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 9.15.1
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - run: pnpm dlx rulesync@43.6.0 generate --dry-run
+      - run: pnpm dlx rulesync@43.6.0 generate
+      - run: pnpm dlx rulesync@43.6.0 generate --check
