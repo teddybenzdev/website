@@ -1,0 +1,24 @@
+{
+  "$schema": "https://github.com/dyoshikawa/rulesync/releases/download/v43.6.0/config-schema.json",
+  "targets": {
+    "claudecode": [
+      "rules"
+    ],
+    "opencode": [
+      "rules"
+    ],
+    "grokcli": [
+      "rules"
+    ],
+    "cursor": [
+      "rules"
+    ],
+    "codexcli": [
+      "rules"
+    ]
+  },
+  "delete": false,
+  "simulateCommands": false,
+  "simulateSubagents": false,
+  "simulateSkills": false
+}
